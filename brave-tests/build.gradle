@@ -7,7 +7,9 @@ plugins {
 }
 
 dependencies {
-    implementation project(':brave')
+    api project(':brave')
+    api 'junit:junit:4.13.2'
+    api 'org.assertj:assertj-core:3.23.1'
 }
 
 description = 'Brave: Interop Tests'

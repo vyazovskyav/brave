@@ -8,6 +8,7 @@ plugins {
 
 dependencies {
     implementation 'io.zipkin.reporter2:zipkin-reporter-brave:2.16.3'
+    api 'com.google.guava:guava:31.1-jre'
     testImplementation 'com.blogspot.mydailyjava:weak-lock-free:0.18'
     testImplementation 'org.powermock:powermock-module-junit4:2.0.9'
     testImplementation 'org.powermock:powermock-api-mockito2:2.0.9'

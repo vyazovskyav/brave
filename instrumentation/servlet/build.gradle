@@ -7,9 +7,9 @@ plugins {
 }
 
 dependencies {
-    implementation project(':brave-instrumentation-http')
+    api project(':brave-instrumentation-http')
     testImplementation project(':brave-instrumentation-http-tests')
-    testImplementation 'org.eclipse.jetty:jetty-servlet:9.4.35.v20201120'
+    testImplementation 'org.eclipse.jetty:jetty-servlets:11.0.9'
     compileOnly 'javax.servlet:javax.servlet-api:3.1.0'
 }
 

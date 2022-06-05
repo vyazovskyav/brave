@@ -6,4 +6,8 @@ plugins {
     id 'io.zipkin.brave.java-conventions'
 }
 
+dependencies {
+    implementation project(':brave')
+}
+
 description = 'Brave Context: JDK Flight Recorder'

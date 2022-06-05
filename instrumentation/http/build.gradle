@@ -9,6 +9,9 @@ plugins {
 dependencies {
     implementation 'io.zipkin.zipkin2:zipkin:2.23.2'
     testImplementation project(':brave-tests')
+
+    api project(':brave')
+
 }
 
 description = 'Brave Instrumentation: Http Adapters'

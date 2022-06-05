@@ -8,6 +8,8 @@ plugins {
 
 dependencies {
     compileOnly 'log4j:log4j:1.2.17'
+    implementation project(':brave')
+
 }
 
 description = 'Brave Context: Log4J 1.2'

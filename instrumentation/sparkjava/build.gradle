@@ -7,9 +7,14 @@ plugins {
 }
 
 dependencies {
-    implementation project(':brave-instrumentation-servlet')
+    api project(':brave-instrumentation-servlet')
+    api project(':brave-instrumentation-http')
+
     testImplementation project(':brave-instrumentation-http-tests')
     compileOnly 'com.sparkjava:spark-core:2.9.3'
+
+    api project(':brave')
+
 }
 
 description = 'Brave Instrumentation: Spark Framework'

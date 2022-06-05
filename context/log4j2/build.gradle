@@ -6,4 +6,9 @@ plugins {
     id 'io.zipkin.brave.java-conventions'
 }
 
+dependencies {
+    api project(':brave')
+    compileOnly 'org.apache.logging.log4j:log4j-api:2.17.2'
+}
+
 description = 'Brave Context: Log4J 2'

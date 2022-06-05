@@ -8,6 +8,9 @@ plugins {
 
 dependencies {
     testImplementation project(':brave-tests')
+
+    api project(':brave')
+
 }
 
 description = 'Brave Instrumentation: Messaging Adapters'
